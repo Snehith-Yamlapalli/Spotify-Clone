@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="Spotify logo.jpg" type="x-icon">
+    <style>
+        body {
+            background-color: black;
+        }
+        .spotifyicon {
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .spotifyicon:hover {
+            background-color: #555; 
+        }
+        .texts {
+            color: antiquewhite;
+            margin-left: 10px; 
+            font-size: 20px;
+        }
+        #all {
+            display: flex;
+            height: 750px;
+        }
+        #leftbox {
+            width: 400px;
+            background-color: rgb(18, 17, 17);
+            border-right: 3px solid rgb(0, 0, 0);
+            border-radius: 30px;
+        }
+        #leftright {
+            height: 50px;
+            background-color: rgb(18, 17, 17);
+            padding: 20px; 
+            border-radius: 30px;
+            border-radius: 50px;
+        }
+        .verticalgap{
+            width:20px;
+            background-color: rgb(0, 0, 0);
+        }
+        #rightbox{
+            background-color: rgb(18, 17, 17);
+            width:1250px;
+            height: 50px;
+        }
+        #horizontalgap1{
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+        #horizontalgap2{
+            width:370px;
+            height: 10px;
+            background-color: rgb(0, 0, 0);
+        }
+        .musicbox{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: rgb(254, 254, 255);
+            margin-left: 20px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(18, 17, 17);
+            width: 300px;
+            height: 60px;
+        }
+        .Csonglogo{
+            width:35px;
+            margin-left: 10px;
+            height: 50px;
+        }
+        .playbutton{
+            width:40px;
+            margin-left: 10px;
+        }
+        #signup{
+            padding-left: 10px;;
+            margin-left: 830px;
+        }
+        #login{
+            padding-top: 10px;
+            align-self: auto;
+            height: 30px;
+            width: 60px;
+            background-color: rgb(63, 66, 66);
+            border-radius: 25px;
+        }
+        
+        .arrow {
+            color: aliceblue;
+            font-size: larger;
+            background-color:rgb(57, 53, 53); 
+            border: 2px solid black;
+            padding: 10px 20px; 
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .arrow:hover {
+            background-color: #555;
+        }
+        .arrow1 {
+            color: aliceblue;
+            font-size: larger;
+            background-color:rgb(57, 53, 53); 
+            border: 2px solid black;
+            padding: 10px 20px; 
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .arrow1:hover {
+            background-color: #555;
+        }
+        #displaysong
+        {
+            color: rgb(0, 0, 0);
+            background-color: #716c6c;
+            width: 720px;
+            margin: 10px;
+            height: 40px;
+            text-align: center;
+            font-size:30px;
+        }
+        #rightdownbox
+        {
+            background-color: rgb(40, 38, 35);
+            height: 635px;
+            border: 2px solid rgb(27, 12, 12);
+            border-radius: 20px;
+        }
+        .songs{
+            color: aliceblue;
+            font-size: larger;
+            background-color:rgb(57, 53, 53); 
+            border: 2px solid black;
+            padding: 10px 20px; 
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+            width: 460px;
+        }
+        .songs:hover{
+            background-color: #555;
+        }
+        #song1{
+            position:absolute;
+            left:460px;
+            top: 200px;
+        }
+        #song2{
+            position:absolute;
+            left:460px;
+            top: 270px;
+        }
+        #song3{
+            position:absolute;
+            left:460px;
+            top: 340px;
+        }
+        #song4{ 
+            position:absolute;
+            left:460px;
+            top: 410px;
+        }
+        #song5{
+            position:absolute;
+            left:460px;
+            top: 480px;
+        }
+        #song6{
+            position:absolute;
+            left:460px;
+            top: 550px;
+        }
+        #song7{
+            position:absolute;
+            left:460px;
+            top: 620px;
+        }
+        #myAudio{
+            width: 400px;
+            position: absolute;
+            left:460px;
+            top: 680px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all"> <!-- this is the main box  -->
+        
+        <div id="leftbox"><!-- this is the LEFT box  -->
+            <div class="spotifyicon">
+                <img src="Spotify icon.jpg" alt="spotify icon" title="spotify" width="40">
+                <p class="texts">Spotify</p>
+            </div>
+            <div class="spotifyicon">
+                <img src="home logo.jpg" alt="home logo" title="home" width="40">
+                <p class="texts">Home</p>
+            </div>
+            <div class="spotifyicon">
+                <img src="search logo.jpg" alt="search logo" title="search" width="40">
+                <p class="texts">Search</p>
+            </div>
+
+            <div id="horizontalgap2"></div>
+
+            <div class="spotifyicon">
+                <img src="yourlibrary.jpg" alt="yourlibrary" height="40px">
+                <p class="texts">Your Library</p>
+            </div>
+
+            <!-- we need 2 boxes now  -->
+            
+            <div class="musicbox">
+                <img src="song logo.jpg" alt="song logo" class="Csonglogo">
+                <p id="s1" class="texts">The Night We Met.mp3</p>
+                <img src="playbutton.jpg" alt="play" class="playbutton">
+            </div>
+            <div class="musicbox">
+                <img src="song logo.jpg" alt="song logo" class="Csonglogo">
+                <p id="s2" class="texts">Goblin -Stay with me.mp3</p>
+                <img src="playbutton.jpg" alt="play" class="playbutton">
+            </div>
+            <div class="musicbox">
+                <img src="song logo.jpg" alt="song logo" class="Csonglogo">
+                <p id="s3" class="texts">Say Yes To Heaven.mp3</p>
+                <img src="playbutton.jpg" alt="play" class="playbutton">
+            </div>
+
+        </div>
+        <!-- left vertical gap -->
+        <div class="verticalgap"></div>
+
+        <div id="rightbox"> 
+
+          <div id="leftright" class="spotifyicon">
+            <button id="left" class="arrow">&lt;</button>
+            <button id="right" class="arrow">&gt;</button>
+            <div>
+                <h3 id="displaysong">SONG NAME</h3>
+            </div>
+            <button class="arrow1">sign up</button>
+            <button class="arrow1">Log In</button>
+          </div>
+
+           <div id="horizontalgap1"></div>
+
+           <div id="rightdownbox">
+            <img src="background1.jpg" alt="backgroundpic"width="1110"height ="635">
+            <button onclick="music(1)" class="songs" id="song1">Say Yes to Heaven.mp3</button>
+            <button onclick="music(2)" class="songs" id="song2">Sweet But Pyscho.mp3</button>
+            <button onclick="music(3)" class="songs" id="song3">Kings & Queens.mp3</button>
+            <button onclick="music(4)" class="songs" id="song4">Blindings Nights.mp3</button>
+            <button onclick="music(5)" class="songs" id="song5">Chenna mera.mp3</button>
+            <button onclick="music(6)" class="songs" id="song6">Satranga.mp3</button>
+            <button onclick="music(7)" class="songs" id="song7">The Night We Met.mp3</button>
+           </div>
+        </div>
+    </div>   
+    <audio id="myAudio" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <img src="playing logo.jpg" alt="playing" height="42px">
+    <script>
+        var audio = document.getElementById("myAudio");
+        var audioSource = document.getElementById("audioSource");
+        var dis = document.getElementById("displaysong");
+        function music(num) 
+        {
+            switch (num) 
+            {
+                case 1:
+                    { 
+                        audioSource.src = "Lana Del Rey – Say Yes To Heaven.mp3";
+                        dis.innerHTML="Lana Del Rey - Say Yes To Heaven ";
+                    }
+                    break;
+                case 2:
+                    {
+                        audioSource.src="Ava Max – Sweet but Psycho.mp3";
+                        dis.innerHTML="Sweet but pschyo - Ava Max";
+                    }
+                    break;
+                case 3:
+                    {
+                        audioSource.src = "Ava Max – Kings  Queens.mp3";
+                        dis.innerHTML="Kings & Queens - Ava Max ";
+                    }
+                    break;
+                case 4:
+                    {
+                        audioSource.src = "The Weeknd – Blinding Lights.mp3";
+                        dis.innerHTML="Blinding Lights - weeknd";
+                    }
+                    break;
+                case 5:
+                    {
+                        audioSource.src = "Pritam,_Arijit_Singh_Channa_Mereya_From_Ae_Dil_Hai_Mushkil_.mp3";
+                        dis.innerHTML="Chenna Mereya - Arjit Singh";
+                    }
+                    break;
+                case 6:
+                    {
+                        audioSource.src = "Arijit_Singh,_Shreyas_Puranik,_Siddharth_Garima_Satranga_From.mp3";
+                        dis.innerHTML="Satranga - Arjit Singh ";
+                    }
+                    break;
+                case 7:
+                    {
+                        audioSource.src = "Lord Huron – The Night We Met.mp3";
+                        dis.innerHTML="Lord Huron- The Night We Met ";
+                    }
+        
+            }
+            audio.load(); 
+            audio.play(); 
+        }
+        function stopSong() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
